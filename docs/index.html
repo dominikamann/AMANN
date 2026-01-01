@@ -77,8 +77,12 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 AMANN | design. craft. build.</p>
+            <p>&copy; <span id="year"></span> AMANN | design. craft. build.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
